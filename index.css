@@ -10,3 +10,43 @@ body {
 h1 {
     color: lightblue;
 }
+.threehands{
+    height: auto;
+    max-width: auto;
+}
+.buttonrock, .buttonpaper, .buttonscissors{
+    display: inline-block;
+    padding:10px;
+    margin: 0 0.1em 0.1em 0;
+    border-radius: 8px;
+    text-decoration:none;
+    font-family:'Orbitron',sans-serif;
+    font-weight: 300;
+    background-color: #C7F92C;
+    text-align: center;
+    transition: all 0.2s;
+    align-content: center;
+    margin-left: 40px;
+    margin-right: 35px;
+
+}
+.buttonrock:hover{
+    border-color: #C7F92C;
+    background-color: #D39EEA;
+}
+.buttonpaper:hover{
+    border-color: #C7F92C;
+    background-color: #D39EEA;
+}
+.buttonscissors:hover{
+    border-color: #C7F92C;
+    background-color: #D39EEA;
+}
+.buttonrock{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.buttonpaper{
+    padding-left: 15px;
+    padding-right: 15px;
+}
