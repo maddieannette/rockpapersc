@@ -14,11 +14,12 @@
     <div class="threehands">
     <img src="images /rpshand.png" alt="rock, paper, scissors hand"/>
     </div>
-    <button onclick="myFunction()" class="buttonrock">ROCK</button>
-    <button onclick="myFunction()" class="buttonpaper">PAPER</button>
-    <button onclick="myFunction()" class="buttonscissors">SCISSORS</button>
+    <button onclick="playRound('buttonrock')" class="buttonrock">ROCK</button>
+    <button onclick="playRound(1)" class="buttonpaper">PAPER</button>
+    <button onclick="playRound(2)" class="buttonscissors">SCISSORS</button>
     <p>YOU WON/LOST</p>
     <p>YOUR SCORE:</p> 
+    <p id="result"></p>
     <p id="cupscore">CPU SCORE:</p>
   <script src="myscripts.js"></script>
 </body>
