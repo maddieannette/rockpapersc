@@ -7,12 +7,18 @@ function computerPlay() {
 }
 
 function playRound(playerSelection) {
-    let computerSelection=computerPlay(); 
+    let computerSelection = computerPlay();
     if (playerSelection === 'buttonrock' && computerSelection === 'buttonscissors' ||
         playerSelection === 'buttonpaper' && computerSelection === 'buttonrock' ||
-        playerSelection === 'buttonscissors' && computerSelection === 'buttonpaper')
-        document.getElementById("result").innerHTML="YOU WIN";
-        return 'YOU WIN!';
+        playerSelection === 'buttonscissors' && computerSelection === 'buttonpaper') {
+        document.getElementById("result").innerHTML = "YOU WIN";
+    } else if (playerSelection === 'buttonrock' && computerSelection === 'buttonpaper' ||
+        playerSelection === 'buttonpaper' && computerSelection === 'buttonscissors' ||
+        playerSelection === 'buttonscissors' && computerSelection === 'buttonrock') {
+        document.getElementById("result").innerHTML = "YOU LOSE";
+    } else {
+        document.getElementById("result").innerHTML = "IT'S A TIE";
+    }
 }
 const playerSelection = 'buttonrock'
 const computerSelection = computerPlay()
