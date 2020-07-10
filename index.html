@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Page Title</title>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <head>
-      <h1> Rock * Paper * Scissors</h1> 
-    </head>
-    <p>Pick One</p>
-    <div class="threehands">
-    <img src="images /rpshand.png" alt="rock, paper, scissors hand"/>
-    </div>
-    <button onclick="playRound('buttonrock')" class="buttonrock">ROCK</button>
-    <button onclick="playRound('buttonpaper')" class="buttonpaper">PAPER</button>
-    <button onclick="playRound('buttonscissors')" class="buttonscissors">SCISSORS</button>
-    <p id="result"></p>
-    <p id="cpuchoice"></p>
-    <p id="yourscore"></p> 
-    <p id="cpuscore"></p>
+
+  <head>
+    <h1> Rock * Paper * Scissors</h1>
+  </head>
+  <table class="scoreboardl">
+    <th>YOUR SCORE</th>
+    <tr>
+      <td>
+        <div id="playerScore">0</div>
+      </td>
+      <table class="scoreboardr">
+      <th>CPU SCORE</th>
+      <tr>
+        <td>
+          <div id="cpuScore">0</div>
+        </td>
+        </table>
+  <div class="threehands">
+    <img src="images /rpshand.png" alt="rock, paper, scissors hand" />
+  </div>
+  <button onclick="playRound('buttonrock')" class="buttonrock">ROCK</button>
+  <button onclick="playRound('buttonpaper')" class="buttonpaper">PAPER</button>
+  <button onclick="playRound('buttonscissors')" class="buttonscissors">SCISSORS</button>
+  <p id="cpuchoice"></p>
+  <p class="result" id="result"></p>
   <script src="myscripts.js"></script>
 </body>
 </html>
